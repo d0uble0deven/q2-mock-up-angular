@@ -1,6 +1,7 @@
 var skills = require('../models/skills');
 
 
+
   
   function index(req, res) {
     res.render('skills/index', {
@@ -8,11 +9,6 @@ var skills = require('../models/skills');
     });
   }
   
-  routes.get('/', function(req, res) {
-    res.render('skills/index', {
-      skills: skills.getAll()
-    });
-  });
 
   function show(req, res) {
     res.render('skills/show', {
@@ -22,5 +18,6 @@ var skills = require('../models/skills');
   }
 
   module.exports = {
-    index
+    index,
+    show
   };

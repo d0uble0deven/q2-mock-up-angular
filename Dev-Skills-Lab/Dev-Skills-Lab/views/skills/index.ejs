@@ -5,11 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Todos</h1>
+    <h1>Skills</h1>
     <ul>
-        <% todos.forEach(function(t, idx) { %>
+        <% skills.forEach(function(t, idx) { %>
         <li>
-          <a href="/todos/<%= idx %>"><%= t.todo %></a>
+          <a href="/skills/<%= idx %>"><%= t.skills %></a>
             - 
           <%= t.done ? 'done' : 'not done' %>
         </li>
@@ -17,9 +17,9 @@
     </ul>
 
   
-        <h1>Todo #<%= todoNum %></h1>
-        <h3><%= todo.todo %></h3>
-        <h3>Complete: <%= todo.done ? 'Yes' : 'No' %></h3>
+        <h1>skills #<%= skillsNum %></h1>
+        <h3><%= skill.skill %></h3>
+        <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
 
   </body>
 </html>

@@ -7,14 +7,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express Skills' });
 });
 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.get('/', function(req, res, next) {
+//   res.send('respond with a resource');
+// });
 
-router.get('/skills', function(req, res) {
-  res.render('skills/index', {
-    skills: skillsDb.getAll()
-  });
-});
+// router.get('/skills', function(req, res) {
+//   res.render('skills/index', {
+//     skills: skills.getAll()
+//   });
+// });
 
 module.exports = router;
