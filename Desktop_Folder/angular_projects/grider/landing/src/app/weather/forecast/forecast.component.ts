@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { ForecastService } from '../forecast.service'
+import { Observable } from 'rxjs'
 
 @Component({
   selector: 'app-forecast',
@@ -7,12 +8,13 @@ import { ForecastService } from '../forecast.service'
   styleUrls: ['./forecast.component.css']
 })
 export class ForecastComponent implements OnInit {
-  forecastData = []
+  forecast$: Observable<{ dateString: string, temp: number }[]>
+  // forecastData = []
 
   constructor(forecastService: ForecastService) {
-
-
-    forecastService.getForecast().subscribe(forecastData => this.forecastData = forecastData)
+    // async pipe renders the observable directly in template
+    this.forecast$ = forecastService.getForecast()
+    // forecastService.getForecast().subscribe(forecastData => this.forecastData = forecastData)
   }
 
   ngOnInit(): void {
