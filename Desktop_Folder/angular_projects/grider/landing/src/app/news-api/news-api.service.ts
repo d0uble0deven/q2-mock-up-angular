@@ -4,12 +4,15 @@ import { Observable, Subject } from 'rxjs'
 import { HttpParams, HttpClient } from '@angular/common/http'
 
 
-interface Article {
+export interface Article {
   title: string
   url: string
+  source: {
+    name: string
+  }
 }
 
-interface NewsApiResponse {
+export interface NewsApiResponse {
   totalResults: number
   articles: Article[]
 }
