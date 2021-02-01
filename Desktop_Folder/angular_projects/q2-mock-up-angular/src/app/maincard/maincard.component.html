@@ -1,0 +1,32 @@
+<main>
+    <h1>Digital banking is lending mobile</h1>
+    <p>Everything has changed. It’s time to transform your technology, your customer relationships, and your entire
+        business to fit a new set of expectations and opportunities.</p>
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    term: {{term}}
+    <br />
+    searchResults: {{searchResults | json}}
+    <br />
+    <h3>HOW CAN WE HELP?</h3>
+    <input (input)="term=$event.target.value" />
+    <button (click)="searchUsers()">LET'S GO</button>
+    <br />
+    <br />
+
+    <span>LENDING</span>
+    <span>CONSUMER SOLUTIONS</span>
+    <span>SECURITY</span>
+    <span>DIGITAL BANKING</span>
+    <span>SALES AND MARKETING</span>
+    <span>EQUIPMENT LEASING</span>
+
+    <ol>
+        <li *ngFor="let user of users">{{user | json}}</li>
+    </ol>
+
+</main>

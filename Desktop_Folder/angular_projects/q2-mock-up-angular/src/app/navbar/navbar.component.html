@@ -1,0 +1,17 @@
+<nav class="top-nav">
+    <a>CHANGE REGION</a>
+    <a>OUR PEOPLE</a>
+    <a>DEVELOPERS</a>
+    <a>PARTNERS</a>
+    <a>INVESTORS</a>
+    <a>LOG IN</a>
+</nav>
+<nav class="bottom-nav">
+    <a>Solutions</a>
+    <a>Resources</a>
+    <a>About Us</a>
+    <input #newStr />
+    <button (click)="emitOutToParent(newStr.value)">Output</button>
+    <a>CONTACT US</a>
+</nav>
+<div>{{inputExampleChild}}</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "q2-mock-up-angular"
+    }
+  },
+  "defaultProject": "q2-mock-up-angular",
+  "cli": {
+    "analytics": "c6a5b22b-1194-4804-bce0-682c82f6787f"
+  }
 }

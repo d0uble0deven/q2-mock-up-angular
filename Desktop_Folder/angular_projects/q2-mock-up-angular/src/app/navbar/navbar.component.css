@@ -1,0 +1,14 @@
+.top-nav {
+    background-color: black;
+    color: white;
+    height: 7vh;
+    min-width: 100%;
+}
+
+.bottom-nav {
+    background-color: white;
+    color: black;
+    height: 14vh;
+    min-width: 100%;
+    box-shadow: 0vh 1vh .5vh rgba(2,2,2,.1);
+}
