@@ -1,14 +1,45 @@
-.top-nav {
-    background-color: black;
-    color: white;
-    height: 7vh;
-    min-width: 100%;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
 }
 
-.bottom-nav {
+nav.top-nav {
+    background-color: black;
+    color: white;
+    height: 6vh;
+    min-width: 100%;
+    
+}
+
+nav.top-nav #region {
+    margin-right: 65%;
+}
+
+nav.bottom-nav {
     background-color: white;
     color: black;
-    height: 14vh;
+    height: 9vh;
     min-width: 100%;
     box-shadow: 0vh 1vh .5vh rgba(2,2,2,.1);
+}
+
+a {
+    margin-right: 1%;
+    margin-left: 0;
+}
+
+
+nav.bottom-nav #right {
+    margin-left: 65%;
+    width: fit-content;
+    height: min-content;
+    
+}
+
+nav.bottom-nav #right button, input{
+    /* border: blueviolet 1vh dashed; 
+    color: blueviolet; */
+    margin-right: 1%;
 }

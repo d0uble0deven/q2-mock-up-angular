@@ -1,6 +1,6 @@
 import { Component, Output } from '@angular/core';
 
-// troubleshoot @output
+// troubleshoot @output --- COMPLETED
 // style
 // set up ng content
 

@@ -1,7 +1,9 @@
 <main>
-    <h1>Digital banking is lending mobile</h1>
-    <p>Everything has changed. It’s time to transform your technology, your customer relationships, and your entire
-        business to fit a new set of expectations and opportunities.</p>
+    <h1>Digital banking <div>is lending mobile</div>
+    </h1>
+    <div>Everything has changed. It’s time to transform your technology, your customer
+        <div>relationships, and your entire business to fit a new set of expectations and opportunities.</div>
+    </div>
     <br />
     <br />
     <br />
@@ -12,21 +14,27 @@
     <br />
     searchResults: {{searchResults | json}}
     <br />
-    <h3>HOW CAN WE HELP?</h3>
-    <input (input)="term=$event.target.value" />
-    <button (click)="searchUsers()">LET'S GO</button>
+    <div class="search">
+        <h3>HOW CAN WE HELP?</h3>
+        <input (input)="term=$event.target.value" placeholder="search by name" />
+        <button (click)="searchUsers()">LET'S GO</button>
+    </div>
     <br />
     <br />
 
-    <span>LENDING</span>
-    <span>CONSUMER SOLUTIONS</span>
-    <span>SECURITY</span>
-    <span>DIGITAL BANKING</span>
-    <span>SALES AND MARKETING</span>
-    <span>EQUIPMENT LEASING</span>
+    <div class="tags">
+        <span>LENDING</span>
+        <span>CONSUMER SOLUTIONS</span>
+        <span>SECURITY</span>
+        <span>DIGITAL BANKING</span>
+        <span>SALES AND MARKETING</span>
+        <span>EQUIPMENT LEASING</span>
+    </div>
 
-    <ol>
-        <li *ngFor="let user of users">{{user | json}}</li>
-    </ol>
+    <div class="json">
+        <ol>
+            <li *ngFor="let user of users">{{user | json}}</li>
+        </ol>
+    </div>
 
 </main>
