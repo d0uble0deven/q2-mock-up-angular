@@ -1,6 +1,7 @@
 outputExampleParent: {{outputExampleParent.length}}
-<app-navbar [inputExampleChild]="inputExampleParent" (emitOutToParent)="logOutputEventFromChild($event)">
+<app-navbar [inputExampleChild]="inputExampleParent" (outputExampleChild)="logOutputEventFromChild($event)">
 </app-navbar>
+
 
 
 <app-maincard></app-maincard>

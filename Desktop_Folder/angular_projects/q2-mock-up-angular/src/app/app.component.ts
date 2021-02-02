@@ -19,8 +19,9 @@ export class AppComponent {
 
   outputExampleParent: any[] = []
 
-  logOutputEventFromChild(str) {
-    console.log('parent out', str)
+
+  logOutputEventFromChild(str: string) {
     this.outputExampleParent.push(str)
+    console.log('parent out', str)
   }
 }

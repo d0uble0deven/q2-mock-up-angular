@@ -9,14 +9,15 @@ export class NavbarComponent implements OnInit {
 
   @Input() inputExampleChild
 
-  @Output() outputExampleChild = new EventEmitter<string>();
+  @Output() outputExampleChild = new EventEmitter<string>()
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  emitOutToParent(value) {
+
+  emitOutToParent(value: string) {
     console.log('child out: ', value)
 
     this.outputExampleChild.emit(value)
