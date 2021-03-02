@@ -11,7 +11,7 @@ export class MaincardComponent implements OnInit {
 
   users: USER[]
 
-  term: string = ''
+  term: string
 
   searchResults: any
 

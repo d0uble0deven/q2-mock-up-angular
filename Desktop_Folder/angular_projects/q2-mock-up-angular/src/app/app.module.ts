@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaincardComponent } from './maincard/maincard.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ContactFormComponent } from './contact-form/contact-form.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MaincardComponent
+    MaincardComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
