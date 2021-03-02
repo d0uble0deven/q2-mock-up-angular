@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
+  favoriteColor = ''
+
   constructor() { }
 
   ngOnInit(): void {
