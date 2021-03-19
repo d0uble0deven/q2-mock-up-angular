@@ -5,7 +5,7 @@ import { Component, OnInit, Input, Output, ViewChild, EventEmitter, ElementRef }
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.css']
 })
-export class TitleComponent implements OnInit {
+export class TitleComponent {
 
   @Input() message: string; //1
 

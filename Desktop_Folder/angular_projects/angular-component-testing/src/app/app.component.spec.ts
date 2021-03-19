@@ -1,11 +1,19 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TitleComponent } from './title/title/title.component'
 
 describe('AppComponent', () => {
+
+  let component: AppComponent;
+  // let fixture: ComponentFixture<AppComponent>;
+
+
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        TitleComponent
       ],
     }).compileComponents();
   }));
@@ -28,4 +36,15 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('angular-component-testing app is running!');
   });
+
+
+  // // app.component.spec.ts
+  // it('should correctly render the passed @Input value', () => {
+  //   component.message = 'Enter a new title'; // 1
+  //   fixture.detectChanges(); // 2
+  //   const compiled = fixture.debugElement.nativeElement; // 2
+  //   expect(compiled.querySelector('p').textContent).toBe('Enter a new title'); // 3
+  // });
+
+
 });
