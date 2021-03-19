@@ -1,3 +1,6 @@
+https://www.testim.io/blog/angular-component-testing-detailed-guide/
+
+
 # AngularComponentTesting
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
